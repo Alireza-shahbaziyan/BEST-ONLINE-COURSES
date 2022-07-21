@@ -10,8 +10,10 @@
   .nav {
     height: 50px;
     width: 100%;
-    background-color: #4d4d4d;
+    background-color: #efefef;
     position: relative;
+    /* position:sticky ; */
+    /* top: 0; */
   }
   
   .nav > .nav-header {
@@ -19,10 +21,16 @@
   }
   
   .nav > .nav-header > .nav-title {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: inline-block;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
     color: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: rgb(255, 115, 0);
+    margin: 5px;
   }
   
   .nav > .nav-btn {
@@ -39,11 +47,12 @@
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #efefef;
+    color: #000;
   }
   
   .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:  rgb(255, 115, 0);
+    color: #fff;
   }
   
   .nav > #nav-check {
@@ -70,13 +79,13 @@
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid #000;
     }
     .nav > .nav-links {
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
+      background-color: #efefef;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;

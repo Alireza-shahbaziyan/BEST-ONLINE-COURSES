@@ -3,15 +3,18 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
 }
-#particles-js{
+
+#particles-js {
     position: absolute;
-    height: 75vh;
+    height: 60vh;
     width: 100%;
 }
+
 header {
     width: 100%;
     background-image: url(../img/carousel-1.jpg);
@@ -33,7 +36,7 @@ header>:first-child {
 
 header>:first-child>:first-child {
     font-weight: 600;
-    text-shadow: 1px 3px 0 #0000, -2px 2px 0px rgba(206,89,55,0);
+    text-shadow: 1px 3px 0 #0000, -2px 2px 0px rgba(206, 89, 55, 0);
 }
 
 header>:first-child>:nth-child(2) {
@@ -43,25 +46,55 @@ header>:first-child>:nth-child(2) {
     text-shadow: 1px 3px 0 #0000, -2px 2px 0px rgba(206, 89, 55, 0);
 
 }
-header>:first-child>:nth-child(3){
-    padding:0  1rem;
+
+header>:first-child>:nth-child(3) {
+    padding: 0 1rem;
 }
-header>:first-child>:nth-child(3)>button {
-    background-color: rgb(255, 115, 0);
-    border-radius: 15px;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: .7rem;
-    width: 130px;
-    border: 1px solid orange;
+
+.button-header {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    /* display: block; */
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
+
+.button-header:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-header:active {
+    transform: scale(0.95);
+}
+
+/* ----------------------media---------------------------- */
 @media screen and (max-width: 768px) {
-    header{
+    #particles-js{
+        height: 40vh;
+    }
+    header {
         height: 75vh;
     }
+
     header>:first-child>:nth-child(2) {
         font-size: 2rem;
     }
+
     header>:first-child>:first-child {
         font-size: .8rem;
     }
