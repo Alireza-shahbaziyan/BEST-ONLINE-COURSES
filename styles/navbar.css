@@ -6,14 +6,17 @@
     margin: 0px;
     font-family: 'segoe ui';
   }
-  
+  nav{
+    position: sticky;
+    top: 0;
+  }
   .nav {
     height: 50px;
     width: 100%;
     background-color: #efefef;
     position: relative;
-    /* position:sticky ; */
-    /* top: 0; */
+    /* position:sticky ;
+    top: 0; */
   }
   
   .nav > .nav-header {
